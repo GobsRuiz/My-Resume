@@ -1,0 +1,39 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #fff;
+    border-bottom: 2px solid var(--belize-hole);
+    box-sizing: border-box;
+
+    padding: 5vh 5vh;
+}
+
+
+
+
+
+/* Logo */
+#header-logo{
+
+}
+
+
+
+
+
+/* Menu */
+#header-menu{
+    display: flex;
+}
+
+/* Link */
+#header-menu a{
+    color: black;
+    text-transform: uppercase;
+
+    margin: 0 4vh;
+}#header-menu a:hover{
+    color: var(--belize-hole);
+}
