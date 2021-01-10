@@ -1,0 +1,64 @@
+#skills{
+    background-color: var(--emerald);
+}
+
+
+
+
+
+
+/* H3 */
+#skills h3{
+    text-align: center;
+
+    color: #fff;
+    font-size: 5vh;
+    background-color: var(--black-30);
+
+    padding: 3vh 0;
+}
+
+
+
+
+
+/* Content */
+#skills-content{
+    width: 70%;
+    max-height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding: 5vh 0;
+}
+
+/* Row */
+.skills-content-row{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Div */
+.skills-content-skill{
+    display: inline-block;
+    background-color: var(--black-30);
+
+    padding: 2vh 5vh;
+    margin: 2vh 0;
+}
+.skills-content-skill div{
+    display: flex;
+    align-items: center;
+}
+/* Image */
+.skills-content-skill img{
+    height: 5vh;
+
+    margin-right: 2vh;
+}
+/* Text */
+.skills-content-skill p{
+    color: #fff;
+}
