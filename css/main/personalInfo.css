@@ -1,5 +1,4 @@
 #personalInfo{
-
     background-image: url("../../images/main/personalInfo/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,9 +29,10 @@
 }
 #personalInfo-card{
     width: var(--personalInfo-card_width);
-    height: auto;
+    height: 80vh;
 
     display: flex;
+    align-items: center;
 
     background-color: #fff;
 
@@ -45,6 +45,7 @@
 /* Image */
 #personalInfo-card-image{
     flex: 1;
+    height: 100%;
 }
 #personalInfo-card-image img{
     width: 100%;
@@ -76,12 +77,18 @@
 .personaInfor-card-info-titleText h6{
     margin-bottom: 0.5vh;
 }
+/* H3 */
+.personaInfor-card-info-titleText h3{
+    font-size: 4vh;
+}
+/* H6 */
 .personaInfor-card-info-titleText h6{
-    font-size: 2.2vh;
+    font-size: 2.5vh;
+    text-transform: uppercase;
 }
 /* P */
 .personaInfor-card-info-titleText p{
-    font-size: 2.2vh;
+    font-size: 2.5vh;
 }
 .personaInfor-card-info-titleText:nth-child(2) p:nth-child(2){
     margin-bottom: 0.5vh;
@@ -98,6 +105,7 @@
     text-align: center;
 
     background-color: var(--black-30);
+    opacity: 0;
     box-sizing: border-box;
 
     margin: 0 auto;
