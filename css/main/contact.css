@@ -1,0 +1,73 @@
+#contact{
+    background-color: var(--petter-river);
+}
+
+
+
+
+
+/* H3 */
+#contact .section-title{
+    color: #fff;
+    background-color: var(--black-30);
+}
+
+
+
+
+
+/* Content */
+#contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 10vh 0;
+}
+
+/* Info */
+.contact-content-info{
+    display: inline-block;
+
+    margin-bottom: 4vh;
+}.contact-content-info:last-child{
+    margin-bottom: 0;
+}
+
+/* H3 and H6 */
+.contact-content-info h3,
+.contact-content-info h6{
+    margin-bottom: 0.5vh;
+}
+/* H3 */
+.contact-content-info h3{
+    font-size: 4vh;
+}
+/* H6 */
+.contact-content-info h6,
+.contact-content-info p{
+    font-size: 2.8vh;
+}
+
+
+
+
+
+/* Social network */
+#contact-socialNetworks{
+    text-align: center;
+
+    background-color: var(--black-30);
+    border-radius: 1vh;
+    box-sizing: border-box;
+
+    padding: 2vh 5vh;
+}
+#contact-socialNetworks img{
+    height: 5vh;
+
+    margin: 0 3vh;
+}
+
+

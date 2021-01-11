@@ -1,7 +1,15 @@
 // Vars
+// Personal info
 var personalInfo_titleText_width = document.querySelectorAll(".personaInfor-card-info-titleText");
+
+// Skill
 var skillContent = document.getElementById("skills-content");
 var skillsContentSkill = document.querySelectorAll(".skills-content-skill");
+
+// Contact
+var contactInfo = document.querySelectorAll(".contact-content-info");
+var contactSocialNetworks = document.getElementById("contact-socialNetworks");
+
 var value_width;
 
 
@@ -20,15 +28,14 @@ function getHigherWidth(div) {
             }
         }
     }
-
-    console.log("n");
     setWidthInDivs(div)
 }
 
 // Set width
 function setWidthInDivs(div) {
-    if(div[0].classList[0] == personalInfo_titleText_width[0].classList[0]) {
-        value_width += 30;
+    // Increase the value
+    if(div[0].classList[0] == personalInfo_titleText_width[0].classList[0] || div[0].classList[0] == contactInfo[0].classList[0]) {
+        value_width += 35;
     }
 
     div.forEach(element => {
@@ -36,12 +43,13 @@ function setWidthInDivs(div) {
         element.style.maxWidth = value_width + "px";
     });
 
-    // setTimeout(() => {
-    //     skillContent.style.display = "flex";
-    // }, 10);
+    // Contact
+    // Social networks
+    contactSocialNetworks.style.width = value_width + "px";
 }
 
 
 // Calling functions
 getHigherWidth(personalInfo_titleText_width)
 getHigherWidth(skillsContentSkill)
+getHigherWidth(contactInfo)
