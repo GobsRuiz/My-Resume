@@ -100,6 +100,8 @@
 
     margin: 0 auto;
     padding: 4vh 2vh;
+    position: relative;
+    z-index: 9;
 }
 
 /* Image */
