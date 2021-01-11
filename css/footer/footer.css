@@ -1,0 +1,17 @@
+#footer{
+
+    background-color: #fff;
+    border-top: 4px solid var(--black-30);
+
+    padding: 2vh;
+}
+
+/* P */
+#footer p{
+    display: inline-block;
+}
+#footer p:nth-child(1){
+    font-weight: bold;
+
+    margin-right: 0.5vh;
+}
