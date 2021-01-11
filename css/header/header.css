@@ -1,9 +1,10 @@
+/* This var is found in the class.css */
 #header{
-    height: 15vh;
+    height: var(--header_width);
 }
 #header_container{
     width: 100%;
-    height: 15vh;
+    height: var(--header_width);
 
     display: flex;
     justify-content: space-between;
@@ -16,6 +17,7 @@
     padding: 0 5vh;
     position: fixed;
     z-index: 99999;
+    transition: height 0.25s;
 }
 
 
@@ -23,8 +25,10 @@
 
 
 /* Logo */
-#header-logo{
-
+/* #header-logo{
+} */
+#header-logo h1{
+    font-size: 5vh;
 }
 
 

@@ -19,3 +19,9 @@
     /* Green */
     --emerald: #2ecc71;
 }
+
+
+:root{
+    /* Header */
+    --header_width: 15vh;
+}

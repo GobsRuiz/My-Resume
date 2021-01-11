@@ -1,6 +1,7 @@
 var headerMenuLinks = document.querySelectorAll("#header a");
 
 
+
 // Functions
 // Event listener
 headerMenuLinks.forEach((element) => {
