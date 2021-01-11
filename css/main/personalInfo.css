@@ -119,4 +119,7 @@
     height: 5vh;
 
     margin: 0 3vh;
+    transition: transform 0.25s;
+}#personalInfo-socialNetworks img:hover{
+    transform: scale(1.5)
 }
