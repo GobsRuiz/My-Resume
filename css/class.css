@@ -5,3 +5,6 @@
 
     padding: 3vh 0;
 }
+.section-title h3{
+    opacity: 0;
+}

@@ -8,9 +8,11 @@
 
 
 /* H3 */
-#skills h3{
-    color: #fff;
+#skills .section-title{
     background-color: var(--black-30);
+}
+#skills .section-title h3{
+    color: #fff;
 }
 
 
@@ -33,6 +35,8 @@
 .skills-content-row{
     display: flex;
     flex-direction: column;
+
+    opacity: 0;
 }
 
 /* Div */

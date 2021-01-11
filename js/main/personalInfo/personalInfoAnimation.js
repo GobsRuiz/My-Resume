@@ -11,11 +11,16 @@ var aboutContent_p = document.querySelectorAll(".about-content-text");
 
 // Skills
 var skills = document.getElementById("skills")
+var skillsSectionTitle = document.querySelector("#skills .section-title h3");
+var skillsContentRowLeft = document.querySelector(".skills-content-row-left");
+var skillsContentRowRight = document.querySelector(".skills-content-row-right");
 
 // Formations
 var formations = document.getAnimations("formations");
 
 // Experiences
+
+
 
 
 
@@ -31,6 +36,7 @@ window.addEventListener("load", () => {
     elementAnimate_translate(personalInfoCardInfo, "translateX(100%)", "translateX(0)")
     elementAnimate_opacity(personalInfoCardInfo, 600)
 })
+
 
 
 // Scroll
@@ -52,6 +58,12 @@ main_windowScroll(aboutContent_h3, 590, "0", "0")
 aboutContent_p.forEach(element => {
     main_windowScroll(element, 520, "translateY(40%)", "translateY(0)")
 });
+
+// Skills
+main_windowScroll(skillsSectionTitle, 570, "0", "0")
+main_windowScroll(skillsContentRowLeft, 470, "translateX(-50%)", "translateY(0)")
+main_windowScroll(skillsContentRowRight, 470, "translateX(50%)", "translateY(0)")
+
 
 
 // Element animate
