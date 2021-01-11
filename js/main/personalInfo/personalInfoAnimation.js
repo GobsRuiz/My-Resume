@@ -23,7 +23,11 @@ var formationsContentFormationhr = document.querySelectorAll(".formations-conten
 // Experiences
 var experiencesSectionTitle = document.querySelector("#experiences .section-title h3");
 
-
+// Contact
+var contactSectionTitle = document.querySelector("#contact .section-title h3");
+var contactContentInfoLeft = document.querySelectorAll(".contact-content-info-left");
+var contactContentInfoRight = document.querySelectorAll(".contact-content-info-right");
+var contactSocialNetworks = document.getElementById("contact-socialNetworks");
 
 
 // Functions
@@ -98,6 +102,16 @@ formationsContentFormationhr.forEach(element => {
 
 // Experiences
 main_windowScroll(experiencesSectionTitle, 560, "translateX(0)", "translateX(0)");
+
+// Contact
+main_windowScroll(contactSectionTitle, 560, "translateX(0)", "translateX(0)");
+contactContentInfoLeft.forEach(element => {
+    main_windowScroll(element, 560, "translateX(-50%)", "translateX(0)");
+});
+contactContentInfoRight.forEach(element => {
+    main_windowScroll(element, 560, "translateX(50%)", "translateX(0)");
+});
+main_windowScroll(contactSocialNetworks, 560, "translateY(60%)", "translateX(0)");
 
 
 

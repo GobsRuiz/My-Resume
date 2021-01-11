@@ -8,8 +8,10 @@
 
 /* H3 */
 #contact .section-title{
-    color: #fff;
     background-color: var(--black-30);
+}
+#contact .section-title h3{
+    color: #fff;
 }
 
 
@@ -29,6 +31,8 @@
 /* Info */
 .contact-content-info{
     display: inline-block;
+
+    opacity: 0;
 
     margin-bottom: 4vh;
 }.contact-content-info:last-child{
@@ -61,6 +65,7 @@
     background-color: var(--black-30);
     border-radius: 1vh;
     box-sizing: border-box;
+    opacity: 0;
 
     padding: 2vh 5vh;
 }
