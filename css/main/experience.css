@@ -6,4 +6,9 @@
 /* Content */
 #experiences-content{
     text-align: center;
+
+    padding: 5vh 0;
+}
+#experiences-content p{
+    font-weight: bold;
 }
