@@ -5,21 +5,23 @@ var personalInfoCardInfo = document.getElementById("personaInfor-card-info");
 var personalInfoSocialNetworks = document.getElementById("personalInfo-socialNetworks");
 
 // About
-var about = document.getElementById("about");
 var aboutContent_h3 = document.getElementById("about-content-title");
 var aboutContent_p = document.querySelectorAll(".about-content-text");
 
 // Skills
-var skills = document.getElementById("skills")
 var skillsSectionTitle = document.querySelector("#skills .section-title h3");
 var skillsContentRowLeft = document.querySelector(".skills-content-row-left");
 var skillsContentRowRight = document.querySelector(".skills-content-row-right");
 
 // Formations
-var formations = document.getAnimations("formations");
+var formationsSectionTitle = document.querySelector("#formations .section-title h3");
+var formationsContentFormationLeft = document.querySelectorAll(".formations-content-formation-left");
+var formationsContentFormationRight = document.querySelectorAll(".formations-content-formation-right");
+var formationsContentFormationball = document.querySelectorAll(".formations-content-formation-ball");
+var formationsContentFormationhr = document.querySelectorAll(".formations-content-formation-hr");
 
 // Experiences
-
+var experiencesSectionTitle = document.querySelector("#experiences .section-title h3");
 
 
 
@@ -38,7 +40,7 @@ window.addEventListener("load", () => {
 })
 
 
-
+// ----------------------------------------------------
 // Scroll
 function main_windowScroll(div, value_top,value_translateFrom, value_translateTo) {
     window.addEventListener("scroll", () => {
@@ -53,19 +55,53 @@ function main_windowScroll(div, value_top,value_translateFrom, value_translateTo
 // Personal info
 main_windowScroll(personalInfoSocialNetworks, 460, "translateY(100%)", "translateY(0)")
 
+
 // About
 main_windowScroll(aboutContent_h3, 590, "0", "0")
 aboutContent_p.forEach(element => {
     main_windowScroll(element, 520, "translateY(40%)", "translateY(0)")
 });
 
+
 // Skills
-main_windowScroll(skillsSectionTitle, 570, "0", "0")
-main_windowScroll(skillsContentRowLeft, 470, "translateX(-50%)", "translateY(0)")
-main_windowScroll(skillsContentRowRight, 470, "translateX(50%)", "translateY(0)")
+main_windowScroll(skillsSectionTitle, 570, "translateX(0)", "translateX(0)")
+main_windowScroll(skillsContentRowLeft, 470, "translateX(-50%)", "translateX(0)")
+main_windowScroll(skillsContentRowRight, 470, "translateX(50%)", "translateX(0)")
+
+
+// Formations
+main_windowScroll(formationsSectionTitle, 570, "translateX(0)", "translateX(0)")
+
+var formationsContentFormation_valueTop = -1750;
+formationsContentFormation_for(formationsContentFormationLeft, "translateX(-50%)", "translateX(0)")
+formationsContentFormation_for(formationsContentFormationRight, "translateX(50%)", "translateX(0)")
+formationsContentFormation_for(formationsContentFormationball, "translateY(500%)", "translateY(0)")
+
+function formationsContentFormation_for(div, value_translateFrom, value_translateTo) {
+    for (let i = 0; i < div.length; i++) {
+       const element = div[i];
+       if(i != 0){
+        formationsContentFormation_valueTop -= 150;
+       }
+       
+       main_windowScroll(element, formationsContentFormation_valueTop, value_translateFrom, value_translateTo);
+
+       if(div.length - i == "1"){
+        formationsContentFormation_valueTop = -1750;
+       }
+   }
+}
+
+formationsContentFormationhr.forEach(element => {
+    main_windowScroll(element, -1750, "translateY(300%)", "translateY(0)")
+});
+
+// Experiences
+main_windowScroll(experiencesSectionTitle, 560, "translateX(0)", "translateX(0)");
 
 
 
+// ----------------------------------------------------
 // Element animate
 // TranslateX
 function elementAnimate_translate(div, value_translateFrom, value_translateTo) {
