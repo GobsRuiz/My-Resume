@@ -9,13 +9,8 @@
 
 /* H3 */
 #skills h3{
-    text-align: center;
-
     color: #fff;
-    font-size: 5vh;
     background-color: var(--black-30);
-
-    padding: 3vh 0;
 }
 
 

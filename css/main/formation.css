@@ -1,0 +1,84 @@
+#formations{
+
+}
+
+
+
+
+
+#formations h3{
+    /* color: #fff;
+    background-color: var(--black-30); */
+}
+
+
+
+
+
+/* Content */
+#formations-content{
+    width: 60%;
+
+    margin: 0 auto;
+}
+
+/* Div */
+.formations-content-formation{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+
+    padding: 0 5vh;
+    position: relative;
+}
+
+/* Left */
+.formations-content-formation-left{
+    flex: 1;
+}
+/* P */
+.formations-content-formation-left p{
+    text-align: right;
+}
+
+/* HR */
+.formations-content-formation-hr{
+    width: 0.2vh;
+    height: 100%;
+
+    background-color: var(--black-30);
+
+    margin: 0 5vh;
+}
+
+/* Ball */
+.formations-content-formation-ball{
+    width: 2vh;
+    height: 2vh;
+
+    background-color: var(--petter-river);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 35%;
+    left: 45.4%;
+    z-index: 9;
+}
+
+/* Right */
+.formations-content-formation-right{
+    flex: 1.2;
+}
+/* P */
+.formations-content-formation-right p{
+    text-align: left;
+}
+
+/* Left and right */
+.formations-content-formation-left p:nth-child(1),
+.formations-content-formation-right p:nth-child(1){
+    font-weight: bold;
+
+    margin-bottom: 1vh;
+}

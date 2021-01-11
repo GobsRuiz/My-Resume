@@ -34,7 +34,6 @@ function setWidthInDivs(div) {
     div.forEach(element => {
         element.style.minWidth = value_width + "px";
         element.style.maxWidth = value_width + "px";
-        console.log(element.clientWidth)
     });
 
     // setTimeout(() => {
