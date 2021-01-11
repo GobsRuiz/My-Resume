@@ -27,7 +27,7 @@ function headerMenuLinks_getSection(href) {
 // Animation scroll
 function headerMenuLinks_animationScroll(to) {
     window.scroll({
-        top: to - 94,
+        top: to - 60,
         behavior: "smooth"
     });
 }
