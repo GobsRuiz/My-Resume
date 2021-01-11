@@ -1,31 +1,58 @@
+// Personal info
 var personalInfoCard = document.getElementById("personalInfo-card");
 var personalInfoCardImage = document.getElementById("personalInfo-card-image");
 var personalInfoCardInfo = document.getElementById("personaInfor-card-info");
 var personalInfoSocialNetworks = document.getElementById("personalInfo-socialNetworks");
+
+// About
+var about = document.getElementById("about");
+var aboutContent_h3 = document.getElementById("about-content-title");
+var aboutContent_p = document.querySelectorAll(".about-content-text");
+
+// Skills
+var skills = document.getElementById("skills")
+
+// Formations
+var formations = document.getAnimations("formations");
+
+// Experiences
 
 
 
 // Functions
 // Event listener load
 window.addEventListener("load", () => {
+    // Personal info
     elementAnimate_opacity(personalInfoCard, 450)
 
-    elementAnimate_translate(personalInfoCardImage, "translateX(-100%)")
+    elementAnimate_translate(personalInfoCardImage, "translateX(-100%)", "translateY(0)")
     elementAnimate_opacity(personalInfoCardImage, 600)
 
-    elementAnimate_translate(personalInfoCardInfo, "translateX(100%)")
+    elementAnimate_translate(personalInfoCardInfo, "translateX(100%)", "translateX(0)")
     elementAnimate_opacity(personalInfoCardInfo, 600)
 })
 
+
 // Scroll
-window.addEventListener("scroll", () => {
-    if(personalInfoSocialNetworks.style.opacity != "1"){
-        if(window.pageYOffset >= 150) {
-            elementAnimate_translate(personalInfoSocialNetworks, "translateY(100%)", "translateY(0)")
-            elementAnimate_opacity(personalInfoSocialNetworks, 500)
+function main_windowScroll(div, value_top,value_translateFrom, value_translateTo) {
+    window.addEventListener("scroll", () => {
+        if(div.style.opacity != "1"){
+            if(window.pageYOffset >= div.offsetTop - value_top) {
+                elementAnimate_translate(div, value_translateFrom, value_translateTo)
+                elementAnimate_opacity(div, 600)
+            }
         }
-    }
-})
+    })
+}
+// Personal info
+main_windowScroll(personalInfoSocialNetworks, 460, "translateY(100%)", "translateY(0)")
+
+// About
+main_windowScroll(aboutContent_h3, 590, "0", "0")
+aboutContent_p.forEach(element => {
+    main_windowScroll(element, 520, "translateY(40%)", "translateY(0)")
+});
+
 
 // Element animate
 // TranslateX
@@ -60,5 +87,4 @@ function elementAnimate_opacity(div, value_time) {
     });
 
     div.style.opacity = "1";
-    console.log(div)
 }

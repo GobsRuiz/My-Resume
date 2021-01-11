@@ -16,17 +16,21 @@
 }
 
 /* H3 */
-#about h3{
+#about-content-title{
     text-align: center;
 
     font-size: 5vh;
+    opacity: 0;
 
     margin-bottom: 4vh;
 }
 
 /* P */
-#about p{
+.about-content-text{
     line-height: 5vh;
 
+    /* border: 1px solid red; */
+
     font-size: 2.6vh;
+    opacity: 0;
 }
