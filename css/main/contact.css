@@ -1,5 +1,6 @@
 #contact{
-    background-color: var(--petter-river);
+    background: -webkit-linear-gradient(to right, #00e1ff, #0b7fdd); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00e1ff, #0b7fdd);
 }
 
 

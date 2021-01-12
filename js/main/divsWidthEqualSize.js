@@ -1,6 +1,6 @@
 // Vars
 // Personal info
-var personalInfo_titleText_width = document.querySelectorAll(".personaInfor-card-info-titleText");
+var personalInfo_titleText = document.querySelectorAll(".personaInfor-card-info-titleText");
 
 // Skill
 var skillContent = document.getElementById("skills-content");
@@ -34,8 +34,10 @@ function getHigherWidth(div) {
 // Set width
 function setWidthInDivs(div) {
     // Increase the value
-    if(div[0].classList[0] == personalInfo_titleText_width[0].classList[0] || div[0].classList[0] == contactInfo[0].classList[0]) {
+    if(div[0].classList[0] == personalInfo_titleText[0].classList[0] || div[0].classList[0] == contactInfo[0].classList[0]) {
         value_width += 35;
+    }else if(div[0].classList[0] == skillsContentSkill[0].classList[0]){
+        value_width += 40;
     }
 
     div.forEach(element => {
@@ -50,6 +52,6 @@ function setWidthInDivs(div) {
 
 
 // Calling functions
-getHigherWidth(personalInfo_titleText_width)
+getHigherWidth(personalInfo_titleText)
 getHigherWidth(skillsContentSkill)
 getHigherWidth(contactInfo)
