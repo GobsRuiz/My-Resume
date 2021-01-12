@@ -1,9 +1,15 @@
 #footer{
+    display: flex;
 
     background-color: #fff;
     border-top: 4px solid var(--black-30);
 
     padding: 2vh;
+}
+
+/* Div */
+#footer div{
+    margin-right: 3vh;
 }
 
 /* P */
