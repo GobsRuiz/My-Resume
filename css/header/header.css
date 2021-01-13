@@ -62,3 +62,74 @@
 }#header-menu a:hover{
     color: var(--belize-hole);
 }
+
+
+
+
+
+/* Responsive */
+/* Hamburguer icon */
+#header_hamburguer{
+    display: none;
+}
+
+/* 1024 */
+@media all and (max-width: 1024px) {
+    /* Menu */
+    #header-menu{
+        height: 100vh;
+
+        display: none;
+
+        background-color: var(--black-30);
+
+        transform: translateX(110%);
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: transform .3s;
+    }
+    #header-menu a {
+        display: block;
+
+        color: #fff;
+
+        margin: 0;
+        padding: 3vh 5vh;
+    }
+
+
+
+    /* Hamburguer icon */
+    #header_hamburguer{
+        display: block;
+
+        cursor: pointer;
+
+        transition: transform .3s;
+    }
+    #header_hamburguer span{
+        width: 4vh;
+        height: 2px;
+
+        display: block;
+    
+        background-color: var(--black-30);
+        opacity: 1;
+    
+        margin-bottom: 5px;
+        transition: transform .25s, opacity .25s;
+    }#header_hamburguer span:last-child{
+        margin-bottom: 0;
+    }
+    /* Animation - click */
+    .hamburguerAnimate#header_hamburguer span:nth-child(1){
+        transform: rotate(45deg) translateY(1.8vh);
+    }
+    .hamburguerAnimate#header_hamburguer span:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguerAnimate span:nth-child(3){
+        transform: rotate(-45deg) translateY(-1.8vh);
+    }
+}
