@@ -37,8 +37,6 @@
 
 
 /* Logo */
-/* #header-logo{
-} */
 #header-logo h1{
     font-size: 5vh;
 }
@@ -132,5 +130,19 @@
     .hamburguerAnimate span:nth-child(3){
         transform: rotate(-45deg) translateY(-1.8vh);
     }
+}
+
+/* 500 */
+@media all and (max-width: 500px) {
+    :root{
+        --headerLogoh1_fontSize_500: 3.2vh;
+    }
+    /* Logo */
+    #header-logo h1{
+        font-size: 3.2vh;
+
+        transition: font-size .3s;
+    }
+}
 }
 

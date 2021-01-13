@@ -35,7 +35,11 @@ function getHigherWidth(div) {
 function setWidthInDivs(div) {
     // Increase the value
     if(div[0].classList[0] == personalInfo_titleText[0].classList[0]) {
-        value_width += 50;
+        if(window.innerWidth > 500){
+            value_width += 50;
+        }else{
+            value_width += 10;
+        }
     }else if(div[0].classList[0] == skillsContentSkill[0].classList[0]){
         if(window.innerWidth > 1024){
             value_width += 50;

@@ -158,3 +158,20 @@
         object-position: top;
     }
 }
+
+/* 500 */
+@media all and (max-width: 500px){
+    /* Info */
+    /* H3 */
+    .personaInfor-card-info-titleText h3{
+        font-size: 3vh;
+    }
+    /* H6 */
+    .personaInfor-card-info-titleText h6{
+        font-size: 2.4vh;
+    }
+    /* P */
+    .personaInfor-card-info-titleText p{
+        font-size: 2.4vh;
+    }
+}

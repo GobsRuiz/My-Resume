@@ -116,7 +116,15 @@
 @media all and (max-width: 1024px){
     /* Content */
     #skills-content{
-        width: 90%;
+        width: 75%;
+    }
+}
+
+/* 850 */
+@media all and (max-width: 850px){
+    /* Content */
+    #skills-content{
+        width: 85%;
     }
 }
 

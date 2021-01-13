@@ -1,4 +1,5 @@
 var headerMenu = document.getElementById("header-menu");
+var headerLogo_h1 = document.querySelector("#header-logo h1");
 var headerHamburguer = document.getElementById("header_hamburguer");
 var headerHamburguer_classAnimate = "hamburguerAnimate";
 
@@ -9,20 +10,28 @@ function headerHamburguer_animate() {
     if(headerHamburguer.classList[0] != headerHamburguer_classAnimate){
         headerHamburguer.classList.add(headerHamburguer_classAnimate);
         
-        headerHamburguer_menu()
+        headerHamburguer_menu("open")
+
+        if(window.innerWidth <= 400){
+            headerHamburguer_title("open")
+        }
 
         headerHamburguer.style.transform = `translateX(-${(headerMenu.offsetWidth - 25)}px)`;
     }else{
         headerHamburguer.classList.remove(headerHamburguer_classAnimate)
 
-        headerHamburguer_menu()
+        headerHamburguer_menu("close")
+
+        if(window.innerWidth <= 400){
+            headerHamburguer_title("close")
+        }
 
         headerHamburguer.style.transform = `translateX(0px)`
     }
 }
 
-function headerHamburguer_menu(){
-    if(headerMenu.style.transform == "translateX(0px)"){
+function headerHamburguer_menu(animation){
+    if(animation == "close"){
         headerMenu.style.transform = "translateX(110%)"
 
         setTimeout(() => {
@@ -34,6 +43,14 @@ function headerHamburguer_menu(){
         setTimeout(() => {
             headerMenu.style.transform = "translateX(0px)"
         }, 1);
+    }
+}
+
+function headerHamburguer_title(animation) {
+    if(animation == "open"){
+        headerLogo_h1.style.fontSize = "1.8vh";
+    }else{
+        headerLogo_h1.style.fontSize = "var(--headerLogoh1_fontSize_500)";
     }
 }
 
