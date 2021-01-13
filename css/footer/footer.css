@@ -23,3 +23,21 @@
 
     margin-right: 0.5vh;
 }
+
+
+
+
+
+/* Responsive */
+/* 500 */
+@media all and (max-width: 500px){
+    #footer{
+        display: block;
+    }
+
+    #footer div{
+        margin-bottom: 0.5vh;
+    }#footer div:last-child{
+        margin-bottom: 0;
+    }
+}
