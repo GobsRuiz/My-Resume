@@ -19,24 +19,23 @@ function dataAnimateFormationScroll() {
     }
 
     formationsContentFormation.forEach(element => {
-        if(element.children[0].style.opacity != 1){
-            if(windowTop > element.offsetTop) { 
-                let childrens = element.children;
-    
-                for (let i = 0; i < childrens.length; i++) {
-                    const children = childrens[i];
-                    if(children.classList != "formations-content-formation-hr"){
-                        let position = children.getAttribute("data-animateFormation");
+        if(windowTop > element.offsetTop) { 
+            let childrens = element.children;
 
-                        // function is found in the file animationSections.js
-                        let value_from = dataAnimate_getValue_from(position);
+            for (let i = 0; i < childrens.length; i++) {
+                const children = childrens[i];
+                if(children.classList != "formations-content-formation-hr"){
+                    let position = children.getAttribute("data-animateFormation");
 
-                        // function is found in the file animationSections.js
-                        dataAnimate_elementAnimate(children, value_from);
-                    }
+                    // function is found in the file animationSections.js
+                    let value_from = dataAnimate_getValue_from(position);
+
+                    // function is found in the file animationSections.js
+                    dataAnimate_elementAnimate(children, value_from);
                 }
             }
         }
+        
     });
 }
 

@@ -28,17 +28,15 @@ function dataAnimateScroll() {
     const windowTop2 = window.pageYOffset + ((window.innerHeight * 3) / 5);
 
     dataAnimate.forEach(element => {
-        if(element.style.opacity != 1){
-            if(element.id == personalInfoSocialNetworks.id){
-                if(windowTop2 > element.offsetTop){
-                    dataAnimate_getPosition(element)
-                }
-            }else if(windowTop > element.offsetTop) {
+        if(element.id == personalInfoSocialNetworks.id){
+            if(windowTop2 > element.offsetTop){
                 dataAnimate_getPosition(element)
-    
-                if(element.id == contactSocialNetworks.id){
-                    eventListenerScroll_stop = 1;
-                }
+            }
+        }else if(windowTop > element.offsetTop) {
+            dataAnimate_getPosition(element)
+
+            if(element.id == contactSocialNetworks.id){
+                eventListenerScroll_stop = 1;
             }
         }
     });
