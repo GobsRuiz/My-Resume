@@ -41,11 +41,15 @@ function setWidthInDivs(div) {
             value_width += 10;
         }
     }else if(div[0].classList[0] == skillsContentSkill[0].classList[0]){
-        if(window.innerWidth > 1024){
+        if(window.innerWidth >= 1024){
             value_width += 50;
         }
     }else if(div[0].classList[0] == contactInfo[0].classList[0]){
-        value_width += 100;
+        if(window.innerWidth >= 1024){
+            value_width += 100;
+        }else{
+            value_width += 25;
+        }
     }
 
     // Set value
