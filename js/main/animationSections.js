@@ -61,7 +61,7 @@ function dataAnimate_getValue_from(position) {
     }else if(position == "right"){
         value_from = "translateX(20vh)";
     }else if(position == "top"){
-        value_from = "translateY(10vh)";
+        value_from = "translateY(-10vh)";
     }else if(position == "bottom"){
         value_from = "translateY(10vh)";
     }else if(position == "bottom-absolute") {
