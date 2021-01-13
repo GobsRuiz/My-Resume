@@ -37,11 +37,14 @@ function setWidthInDivs(div) {
     if(div[0].classList[0] == personalInfo_titleText[0].classList[0]) {
         value_width += 50;
     }else if(div[0].classList[0] == skillsContentSkill[0].classList[0]){
-        value_width += 50;
+        if(window.innerWidth > 1024){
+            value_width += 50;
+        }
     }else if(div[0].classList[0] == contactInfo[0].classList[0]){
         value_width += 100;
     }
 
+    // Set value
     div.forEach(element => {
         element.style.minWidth = value_width + "px";
         element.style.maxWidth = value_width + "px";

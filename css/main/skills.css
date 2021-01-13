@@ -106,3 +106,33 @@
     background: -webkit-linear-gradient(to right, #00c6ff, #fffc00); 
     background: linear-gradient(to right, #00c6ff, #fffc00); 
 } */
+
+
+
+
+
+/* Responsive */
+/* 1024 */
+@media all and (max-width: 1024px){
+    /* Content */
+    #skills-content{
+        width: 90%;
+    }
+}
+
+/* 700 */
+@media all and (max-width: 700px){
+    /* Content */
+    #skills-content{
+        width: 50vh;
+
+        flex-direction: column;
+    }
+
+    /* Row */
+    .skills-content-row{
+        margin-bottom: 6vh;
+    }.skills-content-row:last-child{
+        margin-bottom: 0;
+    }
+}
