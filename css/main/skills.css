@@ -23,7 +23,6 @@
 /* Content */
 #skills-content{
     width: 70%;
-    max-height: 500px;
 
     display: flex;
     justify-content: space-between;
@@ -44,7 +43,6 @@
 
     background-color: var(--black-30);
     /* border: 2px solid var(--black-30); */
-    opacity: 0;
 
     margin: 2vh 0;
 }
@@ -55,7 +53,7 @@
 
 /* Title */
 .skills-content-row-title{
-    opacity: 0;
+    font-size: 3vh;
 }
 
 /* Image */
@@ -64,7 +62,8 @@
 
     background-color: var(--black-30);
 
-    padding: 2vh 3vh;
+    padding: 2vh 0;
+    padding-left: 3vh;
     margin-right: 2vh;
 }
 .skills-content-skill-image img{
@@ -80,6 +79,7 @@
 }
 .skills-content-skill-text p{
     color: #fff;
+    font-size: 2.5vh;
 }
 
 

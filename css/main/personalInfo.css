@@ -106,10 +106,9 @@
     background: linear-gradient(to right, #00e1ff, #0b7fdd);
     border-bottom-left-radius: 1vh;
     border-bottom-right-radius: 1vh;
-    opacity: 0;
 
     margin: 0 auto;
-    padding-bottom: 5px;
+    padding-bottom: 1vh;
     position: relative;
     z-index: 5;
 }
@@ -120,7 +119,6 @@
     text-align: center;
 
     background-color: var(--black-30);
-    opacity: 0;
     box-sizing: border-box;
 
     padding: 4vh 2vh;

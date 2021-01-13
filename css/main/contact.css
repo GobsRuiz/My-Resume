@@ -21,6 +21,8 @@
 
 /* Content */
 #contact-content{
+    width: 60%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,8 +34,6 @@
 /* Info */
 .contact-content-info{
     display: inline-block;
-
-    opacity: 0;
 
     margin-bottom: 4vh;
 }.contact-content-info:last-child{
@@ -66,9 +66,8 @@
     background-color: var(--black-30);
     border-radius: 1vh;
     box-sizing: border-box;
-    opacity: 0;
 
-    padding: 2vh 5vh;
+    padding: 2vh 0vh;
 }
 #contact-socialNetworks img{
     height: 5vh;

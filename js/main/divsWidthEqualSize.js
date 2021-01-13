@@ -35,9 +35,9 @@ function getHigherWidth(div) {
 function setWidthInDivs(div) {
     // Increase the value
     if(div[0].classList[0] == personalInfo_titleText[0].classList[0] || div[0].classList[0] == contactInfo[0].classList[0]) {
-        value_width += 35;
+        value_width += 100;
     }else if(div[0].classList[0] == skillsContentSkill[0].classList[0]){
-        value_width += 40;
+        value_width += 50;
     }
 
     div.forEach(element => {
