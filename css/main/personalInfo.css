@@ -68,6 +68,7 @@
 
 /* Div - titleText */
 .personaInfor-card-info-titleText{
+    border: 1px solid red;
     margin-bottom: 5vh;
 }.personaInfor-card-info-titleText:last-child{
     margin-bottom: 0;
@@ -134,4 +135,26 @@
     transition: transform 0.25s;
 }#personalInfo-socialNetworks img:hover{
     transform: scale(1.5)
+}
+
+
+
+
+
+/* Responsive */
+/* 900 */
+@media all and (max-width: 900px){
+    /* Card */
+    #personalInfo-card{
+        height: auto;
+        flex-direction: column;
+    }
+
+    /* Image */
+    #personalInfo-card-image{
+        height: 40vh;
+    }
+    #personalInfo-card-image img{
+        object-position: top;
+    }
 }
