@@ -184,13 +184,14 @@
     }
 }
 
-@media all and (max-width: 350px){
+@media all and (max-width: 355px){
     /* Image */
     #personalInfo-card-image{
         border: 5px solid red;
     }
 
+    /* Info */
     #personaInfor-card-info{
-        padding: 0 5vh;
+        padding: 4vh;
     }
 }
