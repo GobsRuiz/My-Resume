@@ -149,15 +149,16 @@
 
     /* Image */
     #personalInfo-card-image{
-        height: 40vh;
+        width: 100%;
+        height: 70vh;
     }
     #personalInfo-card-image img{
-        object-position: top;
+        object-fit: contain;
     }
 
     /* Info */
     #personaInfor-card-info{
-        padding: 2vh 0;
+        padding: 4vh 0;
     }
 }
 
