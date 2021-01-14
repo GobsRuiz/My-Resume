@@ -184,7 +184,7 @@
     }
 }
 
-@media all and (max-width: 355px){
+@media all and (max-width: 360px){
     /* Image */
     #personalInfo-card-image{
         border: 5px solid red;
@@ -193,5 +193,17 @@
     /* Info */
     #personaInfor-card-info{
         padding: 4vh;
+    }
+    /* H3 */
+    .personaInfor-card-info-titleText h3{
+        font-size: 2.5vh;
+    }
+    /* H6 */
+    .personaInfor-card-info-titleText h6{
+        font-size: 2vh;
+    }
+    /* P */
+    .personaInfor-card-info-titleText p{
+        font-size: 2vh;
     }
 }
