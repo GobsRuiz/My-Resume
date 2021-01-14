@@ -184,7 +184,7 @@
     }
 }
 
-@media all and (max-width: 320px){
+@media all and (max-width: 450px){
     /* Image */
     #personalInfo-card-image{
         border: 5px solid red;
