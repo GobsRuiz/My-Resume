@@ -140,7 +140,7 @@
 
 /* Responsive */
 /* 900 */
-@media (max-width: 900px){
+@media all and (max-width: 900px){
     /* Card */
     #personalInfo-card{
         height: auto;
@@ -163,9 +163,9 @@
 }
 
 /* 600 */
-@media (max-width: 600px){
+@media all and (max-width: 600px){
     /* Height: 1024 */
-    @media (max-height: 1024px){
+    @media all and (max-height: 1024px){
         /* Info */
         #personaInfor-card-info{
             padding: 4vh 0;
@@ -187,7 +187,7 @@
 }
 
 /* 500 */
-@media (max-width: 500px){
+@media all and (max-width: 500px){
     /* Image */
     #personalInfo-card-image{
         height: auto;
@@ -208,7 +208,7 @@
     }
 }
 
-@media (max-width: 360px){
+@media all and (max-width: 360px){
     /* Info */
     #personaInfor-card-info{
         border: 1px solid yellow;
