@@ -12,11 +12,7 @@ function headerHamburguer_animate() {
         
         headerHamburguer_menu("open")
 
-        if(window.innerWidth <= 400){
-            headerHamburguer_title("open")
-        }
-
-        if(window.innerWidth == 600 && window.innerHeight == 1024){
+        if(window.innerWidth <= 850){
             headerHamburguer_title("open")
         }
 
@@ -26,11 +22,7 @@ function headerHamburguer_animate() {
 
         headerHamburguer_menu("close")
 
-        if(window.innerWidth <= 400){
-            headerHamburguer_title("close")
-        }
-
-        if(window.innerWidth == 600 && window.innerHeight == 1024){
+        if(window.innerWidth <= 850){
             headerHamburguer_title("close")
         }
 

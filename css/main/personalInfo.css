@@ -119,7 +119,7 @@
     background-color: var(--black-30);
     box-sizing: border-box;
 
-    padding: 4vh 2vh;
+    padding: 4vh 0vh;
     position: relative;
     z-index: 9;
 }
@@ -140,7 +140,7 @@
 
 /* Responsive */
 /* 900 */
-@media all and (max-width: 900px){
+@media screen and (max-width: 1024px){
     /* Card */
     #personalInfo-card{
         height: auto;
@@ -158,42 +158,12 @@
 
     /* Info */
     #personaInfor-card-info{
-        padding: 4vh 0;
+        padding: 5vh 0vh;
     }
 }
 
-/* 600 */
-@media all and (max-width: 600px){
-    /* Height: 1024 */
-    @media all and (max-height: 1024px){
-        /* Info */
-        #personaInfor-card-info{
-            padding: 4vh 0;
-        }
-        /* H3 */
-        .personaInfor-card-info-titleText h3{
-            font-size: 3vh;
-        }
-        /* H6 */
-        .personaInfor-card-info-titleText h6{
-            font-size: 2.4vh;
-            text-transform: uppercase;
-        }
-        /* P */
-        .personaInfor-card-info-titleText p{
-            font-size: 2.4vh;
-        }
-    }
-}
-
-/* 500 */
-@media all and (max-width: 500px){
-    /* Image */
-    #personalInfo-card-image{
-        height: auto;
-    }
-
-    /* Info */
+/* 800 */
+@media screen and (max-width: 800px){
     /* H3 */
     .personaInfor-card-info-titleText h3{
         font-size: 3vh;
@@ -201,6 +171,7 @@
     /* H6 */
     .personaInfor-card-info-titleText h6{
         font-size: 2.4vh;
+        text-transform: uppercase;
     }
     /* P */
     .personaInfor-card-info-titleText p{
@@ -208,21 +179,33 @@
     }
 }
 
-@media all and (max-width: 360px){
-    /* Info */
-    #personaInfor-card-info{
-        padding: 4vh;
+/* 400 */
+@media screen and (max-width: 420px){
+    /* 800 */
+    @media screen and (max-width: 800px){
+        /* H3 */
+        .personaInfor-card-info-titleText h3{
+            font-size: 2.5vh;
+        }
+        /* H6 */
+        .personaInfor-card-info-titleText h6{
+            font-size: 2vh;
+            text-transform: uppercase;
+        }
+        /* P */
+        .personaInfor-card-info-titleText p{
+            font-size: 2vh;
+        }
     }
-    /* H3 */
-    .personaInfor-card-info-titleText h3{
-        font-size: 2.5vh;
-    }
-    /* H6 */
-    .personaInfor-card-info-titleText h6{
-        font-size: 2vh;
-    }
-    /* P */
-    .personaInfor-card-info-titleText p{
-        font-size: 2vh;
+}
+
+/* 360 */
+@media screen and (max-width: 360px){
+    /* 640 */
+    @media screen and (max-width: 640px){
+        /* H3 */
+        .personaInfor-card-info-titleText h3{
+            font-size: 2.8vh;
+        }
     }
 }
