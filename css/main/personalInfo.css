@@ -211,7 +211,6 @@
 @media all and (max-width: 360px){
     /* Info */
     #personaInfor-card-info{
-        border: 1px solid yellow;
         padding: 4vh;
     }
     /* H3 */
