@@ -39,6 +39,8 @@
 /* Logo */
 #header-logo h1{
     font-size: 5vh;
+
+    transition: font-size .3s;
 }
 
 
@@ -122,27 +124,45 @@
     }
     /* Animation - click */
     .hamburguerAnimate#header_hamburguer span:nth-child(1){
-        transform: rotate(45deg) translateY(1.8vh);
+        transform: rotate(45deg) translateY(500%);
     }
     .hamburguerAnimate#header_hamburguer span:nth-child(2){
         opacity: 0;
     }
     .hamburguerAnimate span:nth-child(3){
-        transform: rotate(-45deg) translateY(-1.8vh);
+        transform: rotate(-45deg) translateY(-500%);
+    }
+}
+
+/* 600 */
+@media (max-width: 600px){
+    /* Height: 1024 */
+    @media (max-height: 1024px){
+        :root{
+            --headerLogoh1_fontSize: 3.2vh;
+        }
+
+        #header-logo h1{
+            font-size: 3.2vh;
+        } 
     }
 }
 
 /* 500 */
-@media all and (max-width: 500px) {
+@media (max-width: 500px) {
     :root{
-        --headerLogoh1_fontSize_500: 3.2vh;
+        --headerLogoh1_fontSize: 3.2vh;
     }
+
+    /* Container */
+    #header_container{
+        padding: 0 3vh;
+    }
+
     /* Logo */
     #header-logo h1{
         font-size: 3.2vh;
-
-        transition: font-size .3s;
     }
 }
-}
+
 

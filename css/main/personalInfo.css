@@ -140,7 +140,7 @@
 
 /* Responsive */
 /* 900 */
-@media all and (max-width: 900px){
+@media (max-width: 900px){
     /* Card */
     #personalInfo-card{
         height: auto;
@@ -150,7 +150,7 @@
     /* Image */
     #personalInfo-card-image{
         width: 100%;
-        height: 70vh;
+        height: auto;
     }
     #personalInfo-card-image img{
         object-fit: contain;
@@ -162,8 +162,32 @@
     }
 }
 
+/* 600 */
+@media (max-width: 600px){
+    /* Height: 1024 */
+    @media (max-height: 1024px){
+        /* Info */
+        #personaInfor-card-info{
+            padding: 4vh 0;
+        }
+        /* H3 */
+        .personaInfor-card-info-titleText h3{
+            font-size: 3vh;
+        }
+        /* H6 */
+        .personaInfor-card-info-titleText h6{
+            font-size: 2.4vh;
+            text-transform: uppercase;
+        }
+        /* P */
+        .personaInfor-card-info-titleText p{
+            font-size: 2.4vh;
+        }
+    }
+}
+
 /* 500 */
-@media all and (max-width: 500px){
+@media (max-width: 500px){
     /* Image */
     #personalInfo-card-image{
         height: auto;
@@ -184,14 +208,10 @@
     }
 }
 
-@media all and (max-width: 360px){
-    /* Image */
-    #personalInfo-card-image{
-        border: 5px solid red;
-    }
-
+@media (max-width: 360px){
     /* Info */
     #personaInfor-card-info{
+        border: 1px solid yellow;
         padding: 4vh;
     }
     /* H3 */

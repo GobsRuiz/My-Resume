@@ -15,22 +15,20 @@
 
 
 /* Content */
-#formations-content{
-    
-}
 
 /* Div */
 .formations-content-formation{
     min-height: 20vh;
-    
+
     display: flex;
     align-items: center;
-    
     
     padding: 0 2vh;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+}.formations-content-formation:last-child{
+    margin-bottom: 0;
 }
 
 /* Left */
@@ -79,4 +77,17 @@
     font-weight: bold;
 
     margin-bottom: 0.5vh;
+}
+
+
+
+
+
+/* Responsive */
+/* 600 */
+@media (max-width: 600px){
+    /* Height: 1024 */
+    @media (max-height: 1024px){
+
+    }
 }

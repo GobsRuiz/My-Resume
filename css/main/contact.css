@@ -82,7 +82,7 @@
 
 
 
-@media all and (max-width: 400px) {
+@media (max-width: 400px) {
     /* H3 */
     .contact-content-info h3{
         font-size: 3.5vh;

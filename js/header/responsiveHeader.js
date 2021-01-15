@@ -16,13 +16,21 @@ function headerHamburguer_animate() {
             headerHamburguer_title("open")
         }
 
-        headerHamburguer.style.transform = `translateX(-${(headerMenu.offsetWidth - 25)}px)`;
+        if(window.innerWidth == 600 && window.innerHeight == 1024){
+            headerHamburguer_title("open")
+        }
+
+        headerHamburguer.style.transform = `translateX(-${(headerMenu.offsetWidth - 20)}px)`;
     }else{
         headerHamburguer.classList.remove(headerHamburguer_classAnimate)
 
         headerHamburguer_menu("close")
 
         if(window.innerWidth <= 400){
+            headerHamburguer_title("close")
+        }
+
+        if(window.innerWidth == 600 && window.innerHeight == 1024){
             headerHamburguer_title("close")
         }
 
@@ -48,9 +56,9 @@ function headerHamburguer_menu(animation){
 
 function headerHamburguer_title(animation) {
     if(animation == "open"){
-        headerLogo_h1.style.fontSize = "1.8vh";
+        headerLogo_h1.style.fontSize = "1.5vh";
     }else{
-        headerLogo_h1.style.fontSize = "var(--headerLogoh1_fontSize_500)";
+        headerLogo_h1.style.fontSize = "var(--headerLogoh1_fontSize)";
     }
 }
 
