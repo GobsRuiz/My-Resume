@@ -28,7 +28,7 @@
     justify-content: space-between;
 
     margin: 0 auto;
-    padding: 5vh 0;
+    padding: calc(4.5vh + 1vw) 0;
 }
 
 /* Row */
@@ -49,22 +49,21 @@
 .skills-content-skill div{
     display: flex;
     align-items: center;
+
+    padding: calc(1.5vh + 1vw) 0;
+    padding-left: calc(1.5vh + 1vw);
 }
 
 /* Title */
 .skills-content-row-title{
-    font-size: 3vh;
+    font-size: calc(3vh + 1vw);
 }
 
 /* Image */
 .skills-content-skill-image{
-    height: 5vh;
+    height: calc(5vh + 1vw);
 
     background-color: var(--black-30);
-
-    padding: 2vh 0;
-    padding-left: 3vh;
-    margin-right: 2vh;
 }
 .skills-content-skill-image img{
     height: 100%;
@@ -72,58 +71,46 @@
 
 /* Text */
 .skills-content-skill-text{
-    height: 5vh;
-
-    padding: 2vh 0vh;
-    padding-right: 2vh;
 }
 .skills-content-skill-text p{
     color: #fff;
-    font-size: 2.5vh;
+    font-size: calc(2.2vh + 1vw);
 }
 
 
 
 
-/* .skills-content-skill-css{
-    background: -webkit-linear-gradient(to right, #00b4db, #0083b0); 
-    background: linear-gradient(to right, #00b4db, #0083b0); 
-}
 
-.skills-content-skill-js{
-    background: -webkit-linear-gradient(to right, #e0dd16, #fffc00); 
-    background: linear-gradient(to right, #fffc00, #ffee00); 
-}.skills-content-skill-js p {
-    color: var(--black-30);
-}
-
-.skills-content-skill-php{
-    background: -webkit-linear-gradient(to right, #00c6ff, #0072ff); 
-    background: linear-gradient(to right, #00c6ff, #0072ff); 
-}
-
-.skills-content-skill-python{
-    background: -webkit-linear-gradient(to right, #00c6ff, #fffc00); 
-    background: linear-gradient(to right, #00c6ff, #fffc00); 
-} */
-
-
-
-
-
+/* Responsive */
 /* 1024 */
 @media screen and (max-width: 1024px){
     /* Content */
     #skills-content{
-        width: 90%;
+        width: 60%;
 
         flex-direction: column;
     }
 
     /* Row */
     .skills-content-row{
-        margin-bottom: 6vh;
+        margin-bottom: calc(5.2vh + 1vw);
     }.skills-content-row:last-child{
         margin-bottom: 0;
+    }
+}
+
+/* 850 */
+@media screen and (max-width: 850px){
+    /* Content */
+    #skills-content{
+        width: 80%;
+    }
+}
+
+/* 600 */
+@media screen and (max-width: 600px){
+    /* Content */
+    #skills-content{
+        width: 90%;
     }
 }
