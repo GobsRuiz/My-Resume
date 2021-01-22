@@ -16,7 +16,13 @@ function headerHamburguer_animate() {
             headerHamburguer_title("open")
         }
 
-        headerHamburguer.style.transform = `translateX(-${(headerMenu.offsetWidth - 20)}px)`;
+        let negativeValue = 0;
+        if(window.innerWidth <= 700){
+            negativeValue = 0;
+        }else{
+            negativeValue = 20;
+        }
+        headerHamburguer.style.transform = `translateX(-${(headerMenu.offsetWidth - negativeValue)}px)`;
     }else{
         headerHamburguer.classList.remove(headerHamburguer_classAnimate)
 
