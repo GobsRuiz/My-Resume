@@ -52,6 +52,7 @@
 
     padding: calc(1.5vh + 1vw) 0;
     padding-left: calc(1.5vh + 1vw);
+    padding-right: calc(1vh + .5vw);
 }
 
 /* Title */
