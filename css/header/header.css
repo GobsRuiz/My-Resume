@@ -83,11 +83,13 @@
         text-align: center;
 
         background-color: var(--black-30);
+        box-sizing: border-box;
 
-        transform: translateX(110%);
+        padding-top: 2vh;
         position: fixed;
         top: 0;
         right: 0;
+        transform: translateX(110%);
         transition: transform .3s;
     }
     #header-menu a {
@@ -97,7 +99,7 @@
         font-size: calc(1.5vh + .8vw);
 
         margin: 0;
-        padding: 4vh calc(1vh + 3vw);
+        padding: 2.5vh calc(3vh + 3vw);
     }
 
 
@@ -126,13 +128,13 @@
     }
     /* Animation - click */
     .hamburguerAnimate#header_hamburguer span:nth-child(1){
-        transform: rotate(45deg) translateY(330%);
+        transform: rotate(45deg) translateY(8px);
     }
     .hamburguerAnimate#header_hamburguer span:nth-child(2){
         opacity: 0;
     }
     .hamburguerAnimate span:nth-child(3){
-        transform: rotate(-45deg) translateY(-310%);
+        transform: rotate(-45deg) translateY(-9px);
     }
 }
 
