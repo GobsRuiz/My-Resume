@@ -11,23 +11,21 @@
     width: 60%;
 
     margin: 0 auto;
-    padding: 10vh 0;
+    padding: calc(7vh + 1vw) 0;
 }
 
 /* H3 */
 #about-content-title{
     text-align: center;
 
-    font-size: 5vh;
+    font-size: calc(3vh + 1vw);
 
-    margin-bottom: 4vh;
+    margin-bottom: calc(2.5vh + .8vw);
 }
 
 /* P */
 .about-content-text{
-    line-height: 5vh;
+    line-height: calc(2.5vh + 1vw);
 
-    /* border: 1px solid red; */
-
-    font-size: 2.6vh;
+    font-size: calc(1.8vh + .5vw);
 }
