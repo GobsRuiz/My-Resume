@@ -54,7 +54,7 @@
 
 /* Link */
 #header-menu a{
-    font-size: 1em;
+    font-size: calc(1.5vh + .5vw);
     color: black;
     text-transform: uppercase;
 
@@ -94,9 +94,10 @@
         display: block;
 
         color: #fff;
+        font-size: calc(1.5vh + .8vw);
 
         margin: 0;
-        padding: 4vh 3vw;
+        padding: 4vh calc(1vh + 3vw);
     }
 
 

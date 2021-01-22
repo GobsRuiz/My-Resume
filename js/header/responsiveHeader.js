@@ -47,11 +47,13 @@ function headerHamburguer_menu(animation){
 }
 
 function headerHamburguer_title(animation) {
-    // if(animation == "open"){
-    //     headerLogo_h1.style.fontSize = "1.5vh";
-    // }else{
-    //     headerLogo_h1.style.fontSize = "var(--headerLogo_fontSize)";
-    // }
+    if(window.innerWidth <= 600){
+        if(animation == "open"){
+            headerLogo_h1.style.fontSize = "1.5vh";
+        }else{
+            headerLogo_h1.style.fontSize = "var(--headerLogo_fontSize)";
+        }
+    }
 }
 
 // Event listener - click
