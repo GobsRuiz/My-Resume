@@ -23,5 +23,8 @@
 
 :root{
     /* Header */
-    --header_width: 15vh;
+    --header_width: calc(11vh + 2vw);
+
+    /* logo */
+    --headerLogo_fontSize: calc(3vh + 1vw);
 }

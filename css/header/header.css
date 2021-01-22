@@ -14,7 +14,7 @@
     border-bottom: 1vh solid var(--black-30);
     box-sizing: border-box;
 
-    padding: 0 3vh;
+    padding: 0 3vw;
     position: fixed;
     z-index: 99999;
     transition: height 0.25s;
@@ -38,7 +38,7 @@
 
 /* Logo */
 #header-logo h1{
-    font-size: 4vh;
+    font-size: var(--headerLogo_fontSize);
 
     transition: font-size .3s;
 }
@@ -54,11 +54,11 @@
 
 /* Link */
 #header-menu a{
-    font-size: 2.5vh;
+    font-size: 1em;
     color: black;
     text-transform: uppercase;
 
-    margin-left: 6vh;
+    margin-left: calc(2vh + 1vw);
 }#header-menu a:hover{
     color: var(--belize-hole);
 }
@@ -80,6 +80,7 @@
         height: 100vh;
 
         display: none;
+        text-align: center;
 
         background-color: var(--black-30);
 
@@ -95,7 +96,7 @@
         color: #fff;
 
         margin: 0;
-        padding: 3vh 3vh;
+        padding: 4vh 3vw;
     }
 
 
@@ -109,8 +110,8 @@
         transition: transform .3s;
     }
     #header_hamburguer span{
-        width: 3vh;
-        height: .3vh;
+        width: calc(3vh + 1vw);
+        height: calc(.4vh + .1vw);
 
         display: block;
     
@@ -124,24 +125,22 @@
     }
     /* Animation - click */
     .hamburguerAnimate#header_hamburguer span:nth-child(1){
-        transform: rotate(45deg) translateY(500%);
+        transform: rotate(45deg) translateY(330%);
     }
     .hamburguerAnimate#header_hamburguer span:nth-child(2){
         opacity: 0;
     }
     .hamburguerAnimate span:nth-child(3){
-        transform: rotate(-45deg) translateY(-500%);
+        transform: rotate(-45deg) translateY(-310%);
     }
 }
 
 /* 800 */
 @media screen and (max-width: 800px){
     :root{
-        --headerLogoh1_fontSize: 3vh;
     }
 
     #header-logo h1{
-        font-size: 3vh;
     } 
 }
 
