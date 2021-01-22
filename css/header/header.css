@@ -128,13 +128,13 @@
     }
     /* Animation - click */
     .hamburguerAnimate#header_hamburguer span:nth-child(1){
-        transform: rotate(45deg) translateY(calc(1.5vh + .2vw));
+        transform: rotate(45deg) translateY(calc(1.8vh));
     }
     .hamburguerAnimate#header_hamburguer span:nth-child(2){
         opacity: 0;
     }
     .hamburguerAnimate span:nth-child(3){
-        transform: rotate(-45deg) translateY(calc(-1.5vh - .2vw));
+        transform: rotate(-45deg) translateY(calc(-1.8vh));
     }
 }
 
