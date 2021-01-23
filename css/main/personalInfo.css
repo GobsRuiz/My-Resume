@@ -29,7 +29,7 @@
 }
 #personalInfo-card{
     width: var(--personalInfo-card_width);
-    height: 70vh;
+    height: 75vh;
 
     display: flex;
     align-items: center;
