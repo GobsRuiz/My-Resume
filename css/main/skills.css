@@ -97,10 +97,10 @@
 }
 
 /* 850 */
-@media screen and (max-width: 750px){
+@media screen and (max-width: 850px){
     /* Content */
     #skills-content{
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -108,7 +108,7 @@
 @media screen and (max-width: 600px){
     /* Content */
     #skills-content{
-        width: 60%;
+        width: 75%;
     }
 }
 

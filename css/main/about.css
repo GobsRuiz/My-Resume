@@ -25,7 +25,21 @@
 
 /* P */
 .about-content-text{
-    line-height: calc(2.5vh + 1vw);
+    line-height: calc(3vh + 1vw);
 
     font-size: calc(2vh + .5vw);
+}
+
+
+
+
+
+/* Responsive */
+@media screen and (min-width: 1500px){
+    /* P */
+    .about-content-text{
+        margin-bottom: calc(1.5vh + .5vw);
+    }.about-content-text:last-child{
+        margin-bottom: 0;
+    }
 }

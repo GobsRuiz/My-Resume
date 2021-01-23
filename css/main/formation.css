@@ -72,10 +72,10 @@
 /* 800 */
 @media screen and (max-width: 800px) {
     /* Min height: 1024 */
-    @media screen and (min-height: 900px){
-        /* .formations-content-formation{
-            min-height: 30vh;
-        } */
+    @media screen and (min-height: 1024px){
+        .formations-content-formation{
+            min-height: 25vh;
+        }
     }
 }
 
