@@ -4,19 +4,19 @@
     background-color: #fff;
     border-top: 1vh solid var(--black-30);
 
-    padding: 4vh 2vh;
+    padding: calc(3vh + .5vw) calc(1.5vh + .2vw);
 }
 
 /* Div */
 #footer div{
-    margin-right: 3vh;
+    margin-right: calc(2vh + .5vw);
 }
 
 /* P */
 #footer p{
     display: inline-block;
 
-    font-size: 2.5vh;
+    font-size: calc(1.3vh + .5vw);
 }
 #footer p:nth-child(1){
     font-weight: bold;
@@ -35,9 +35,16 @@
         display: block;
     }
 
+    /* Div */
     #footer div{
         margin-bottom: 0.5vh;
     }#footer div:last-child{
         margin-bottom: 0;
     }
+
+    /* P */
+    #footer p:nth-child(1){
+        margin-right: 0vh;
+    }
+    
 }
