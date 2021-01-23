@@ -126,7 +126,7 @@
 
 /* Image */
 #personalInfo-socialNetworks img{
-    height: calc(3.6vh + 1vw);
+    height: calc(3vh + .8vw);
 
     margin: 0 calc(2vh + .6vw);
     transition: transform 0.25s;
