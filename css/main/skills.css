@@ -50,12 +50,12 @@
     display: flex;
     align-items: center;
 
-    padding: calc(1.5vh + .5vw) calc(1.5vh + 1vw);
+    padding: calc(1vh + .5vw) calc(1.8vh + .5vw);
 }
 
 /* Title */
 .skills-content-row-title{
-    font-size: calc(2.5vh + .8vw);
+    font-size: calc(2.2vh + .5vw);
 }
 
 /* Image */
@@ -71,7 +71,7 @@
 /* Text */
 .skills-content-skill-text p{
     color: #fff;
-    font-size: calc(2vh + .6vw);
+    font-size: calc(1.6vh + .5vw);
 }
 
 
@@ -116,6 +116,6 @@
 @media screen and (max-width: 450px){
     /* Content */
     #skills-content{
-        width: 80%;
+        width: 85%;
     }
 }
